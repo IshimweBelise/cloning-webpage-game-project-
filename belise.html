@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change text</title>
+</head>
+<body>
+    <p id="text">hello this is my jorney</p>
+    <button id="change text">change text</button>
+    <button id="remove text">remove text</button>
+    <script>
+        const text1= document.getElementById('text')
+        const button1 = document.getElementById('change text')
+        const button2 = document.getElementById('remove text')
+        button1.addEventListener('click', function(){
+            text.textContent= "hello world";
+            
+
+        })
+        button2.addEventListener('click', function(){
+            text.textContent=""
+
+        })
+
+    </script>
+    
+    
+</body>
+</html>
