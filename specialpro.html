@@ -11,21 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
-    <div class="bg-blue-500"> <!--this is the container for the blue color back ground-->
+    <div class="bg-blue-500 rounded-b-3xl"> <!--this is the container for the blue color back ground-->
         
 
         <!--navigation links tabs and the icon, the button on the top of the page -->
         <div >
-            <nav class="bg-blue-500 text-white sticky top-0 x-50">
+            <nav class="bg-blue-500 text-white sticky top-0 x-50 flex justify-between p-12">
+                <div>
+                    <img src="game cloning pictures/logo.png" alt="">
+                </div>
 
-                <img src="logo.png" alt="">
-
-                <div class="flex justify-between gap-14 items-center">
+                <div class="flex justify-between gap-12 items-center">
                     <a href="#" class="">home</a>
                     <a href="#" class="">our shop</a>
                     <a href="#" class="">product details</a>
                     <a href="#" class="">contact us</a>
-                    <button class= " bg-red-500 text-white rounded-lg px-2">SIGN IN</button>
+                    <button class= " bg-red-500 text-white rounded-lg px-4 ">SIGN IN</button>
                 </div>
             </nav>
         </div>
@@ -36,56 +37,67 @@
             <P class="text-white pl-13 mt-8 text-base">LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming <br> websites. You can download and use this layout for commercial purposes. <br> Please tell your friends about TemplateMo</P><br>
 
             <div class="text-right">
-              <img src="banner-image.jpg" alt="" class=" inline-block w-80 rounded-2xl  ">
+              <img src="game cloning pictures/banner-image.jpg" alt="" class=" inline-block w-80 rounded-2xl  ">
             </div>
 
 
             <div class="relative w-96"> <!--this is for the input box-->
                 <input type="text" placeholder="Type something" class="rounded-full px-4 py-2 mt-30 ml-13 w-96 bg-white text-gray-800 relative">
-                    <button class="bg-red-300 rounded-full absolute top-0 mt-30 mr-2 right-0 text-white p-2 hover:bg-red-400">Search Now</button>
+                <button class="bg-red-500 rounded-full absolute top-0 mt-30 mr-2 right-0 text-white p-2 hover:bg-blue-500">Search Now</button>
             </div>
 
            
         </div>
    </div> 
 
-   <div> <!--trending games-->
-        <div class="rounded-lg p-4 bg-white-500"><!--first box-->
-            <img src="featured-01.png" alt="" class="">
-            <p class="text-black font-bold justify-self-center">FREE STORAGE</p>
-         </div>
 
-            <div class="rounded-lg p-4 bg-white-500"><!--second box-->
-                <img src="featured-02.png" alt="" class="bg-blue-500 flex justify-self-center rounded-4xl p-2">
-                <p class="text-black font-bold justify-self-center">USER MODE </p>
-            </div>
+<div class="flex justify-between gap-4 mt-6">
+    <!-- Card 1: FREE STORAGE -->
+    <div class="flex flex-col items-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition w-full text-center">
+        <div class="bg-blue-500 rounded-full p-4 mb-3">
+            <img src="game cloning pictures/featured-01.png" alt="Free Storage" class="w-8 h-8">
+        </div>
+        <p class="text-gray-800 font-bold">FREE STORAGE</p>
+    </div>
 
-            
-                
-            <div class = " rounded-lg p-4 bg-white-500"><!--third box-->
-                <img src="featured-03.png" alt="" class="bg-blue-500 flex justify-self-center rounded-4xl p-2">
-                <p class="text-black font-bold justify-self-center">REPLY READY</p>
-            </div>
+    <!-- Card 2: USER MODE -->
+    <div class="flex flex-col items-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition w-full text-center">
+        <div class="bg-blue-500 rounded-full p-4 mb-3">
+            <img src="game cloning pictures/featured-02.png" alt="User Mode" class="w-8 h-8">
+        </div>
+        <p class="text-gray-800 font-bold">USER MODE</p>
+    </div>
 
-             <div class="rounded-lg p-4 bg-white-500">
-                 <img src="featured-04.png" alt="" class="bg-blue-500 flex justify-self-center rounded-4xl p-2"><!--fourth box-->
-                <p class="text-black font-bold justify-self-center">EASY LAYOUT</p>
+    <!-- Card 3: REPLY READY -->
+    <div class="flex flex-col items-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition w-full text-center">
+        <div class="bg-blue-500 rounded-full p-4 mb-3">
+            <img src="game cloning pictures/featured-03.png" alt="Reply Ready" class="w-8 h-8">
+        </div>
+        <p class="text-gray-800 font-bold">REPLY READY</p>
+    </div>
 
-             </div><br>
+    <!-- Card 4: EASY LAYOUT -->
+    <div class="flex flex-col items-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition w-full text-center">
+        <div class="bg-blue-500 rounded-full p-4 mb-3">
+            <img src="game cloning pictures/featured-04.png" alt="Easy Layout" class="w-8 h-8">
+        </div>
+        <p class="text-gray-800 font-bold">EASY LAYOUT</p>
+    </div>
+</div>
                 
     </div> 
 
    <div> <!--this is for the trending game-->
-        <p class="text-red-500 text-1xl font-bold" >TRENDING</p>
-        <h1 class="text-4xl font-bold pl-13">Trending games</h1>
-        <button class = "bg-red-500 text-white rounded-lg px-2 mt-2">VIEW ALL</button>
+        <p class="text-red-500 text-1xl font-bold mt-10" >TRENDING</p>
+        <h1 class="text-4xl font-bold pl-13 mt-10">Trending games</h1>
+        <button class = "bg-red-500 text-white rounded-lg px-2 mt-10">VIEW ALL</button>
 
 
         <div class="flex gap-4 mt-6">           
-            <img src="trending-01.jpg" alt=""><br>
-            <img src="trending-02.jpg" alt=""><br>
-            <img src="trending-03.jpg" alt=""><br>
-            <img src="trending-04.jpg" alt=""><br>
+            <img src="game cloning pictures/trending-01.jpg" alt=""><br>
+            <img src="game cloning pictures/trending-02.jpg" alt=""><br>
+            <img src="game cloning pictures/trending-03.jpg" alt=""><br>
+            <img src="game cloning pictures/trending-04.jpg" alt=""><br>
         </div>
         
     
@@ -93,36 +105,36 @@
    </div>
 
    <div><!--most played-->
-        <p class="font-bold  text-1xl text-red-500">top games</p>
-        <h1 class="text-4xl font-bold pl-13 ">most played </h1>
+        <p class="font-bold  text-1xl text-red-500 mt-10">top games</p>
+        <h1 class="text-4xl font-bold pl-13 mt-10 ">most played </h1>
 
         <div class="flex gap-4 mt-6">
             <div>
-                <img src="top-game-01.jpg" alt=""><br>
-                <button>explore</button>
+                <img src="game cloning pictures/top-game-01.jpg" alt=""><br>
+                <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
             <div >
-                <img src="top-game-02.jpg" alt=""><br>
+                <img src="game cloning pictures/top-game-02.jpg" alt=""><br>
                 <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
 
             <div>
-                <img src="top-game-03.jpg" alt=""><br>
+                <img src="game cloning pictures/top-game-03.jpg" alt=""><br>
                 <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
 
             <div>
-                <img src="top-game-04.jpg" alt=""><br>
+                <img src="game cloning pictures/top-game-04.jpg" alt=""><br>
                 <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
 
             <div>
-                <img src="top-game-05.jpg" alt=""><br>
+                <img src="game cloning pictures/top-game-05.jpg" alt=""><br>
                 <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
 
             <div>
-                <img src="top-game-06.jpg" alt=""><br>
+                <img src="game cloning pictures/top-game-06.jpg" alt=""><br>
                 <button class="bg-red-500 text-white rounded-lg px-2 mt-2">explore</button>
             </div>
 
@@ -130,28 +142,28 @@
    </div>
 
    <div > <!--top category-->
-        <p class="font-bold  text-1xl text-red-500">category</p>
-        <h1 class="text-4xl font-bold pl-13 mt-2">top category </h1>
+        <p class="font-bold  text-1xl text-red-500 mt-10">category</p>
+        <h1 class="text-4xl font-bold pl-13 mt-10">top category </h1>
 
         <div class="flex gap-4 mt-6"> <!--this for applying the flex  like the position-->
 
             <div >
-                <img src="categories-01.jpg" alt="">
+                <img src="game cloning pictures/categories-01.jpg" alt="">
                 <button class="bg-blue-500 text-white rounded-lg px-2 mt-2">Action</button>
             </div>
 
             <div>
-                <img src="categories-03.jpg" alt="">
+                <img src="game cloning pictures/categories-03.jpg" alt="">
                 <button class="bg-blue-500 text-white rounded-lg px-2 mt-2">Action</button>
             </div>
 
             <div>
-                <img src="categories-04.jpg" alt="">
+                <img src="game cloning pictures/categories-04.jpg" alt="">
                 <button class="bg-blue-500 text-white rounded-lg px-2 mt-2">Action</button>
             </div>
 
             <div>
-                <img src="categories-05.jpg" alt="">
+                <img src="game cloning pictures/categories-05.jpg" alt="">
                 <button class="bg-blue-500 text-white rounded-lg px-2 mt-2">Action</button>
             </div>
         </div>
@@ -172,8 +184,8 @@
 
    </div>
 
-   <div class="bg-blue-500"> <!--fotter-->
-        <p class="text-white">Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</p>
+   <div class="bg-blue-500 rounded-lg mt-10 p-12"> <!--fotter-->
+        <p class="text-white mt-10 pl-60">Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</p>
 
    </div>
 
